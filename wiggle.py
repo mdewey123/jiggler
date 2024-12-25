@@ -13,7 +13,7 @@ def get_coordinates():
 def wiggle_mouse():
     width, height = get_coordinates()
     
-    for i in range(random.randint(1, 6)):
+    for i in range(random.random(2, 6)):
         x_dest = random.randint(10, width-10)
         y_dest = random.randint(10, height-10)
         pyautogui.moveTo(x_dest, y_dest, duration=6.9)
