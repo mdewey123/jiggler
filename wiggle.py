@@ -39,6 +39,7 @@ def shutdown():
     
     finally:  
         timer.cancel()
+        wiggle_mouse()
         
     if result == "Finish":
         print("Wiggler is going to take a break now")
